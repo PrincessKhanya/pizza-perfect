@@ -1,4 +1,5 @@
 
+/* 
 body {
 	background: white;
 	font-family: arial, sans-serif;
@@ -45,7 +46,7 @@ body {
 
 	/* .field label {
 		margin: 1em;
-	} */
+	} 
 
 
 	.header {
@@ -63,7 +64,7 @@ body {
 		top: 0em;
 		right: 0em;
 		margin-right: 1em;
-		padding: 1em; */
+		padding: 1em; 
 	}
 
 	.hidden {
@@ -71,35 +72,35 @@ body {
 	}
 
 	.cart {
-		/* position: fixed; */
+		/* position: fixed; 
 		width: 100%;
-		/* margin: auto; */
-		/* width: 40%; */
-		/* min-height: 15em; */
+		/* margin: auto; 
+		/* width: 40%; 
+		/* min-height: 15em; 
 		background-color: #CDD93F;
 		top: 0em;
 		right: 0em;
 		margin-right: 1em;
 		padding: 1em;
-		/* border: 0.1em solid; */
+		/* border: 0.1em solid; 
 		border-radius: 0.25em;
-		/* z-index: 1000; */
+		/* z-index: 1000; 
 	}
 
 	.cartTotal {
 		position: fixed;
 		/* width: 100%; */
-		/* margin: auto; */
+		/* margin: auto; 
 		width: 20%;
-		/* min-height: 15em; */
+		/* min-height: 15em; 
 		background-color: #CDD93F;
 		top: 0em;
 		right: 0em;
 		margin-right: 1em;
 		padding: 1em;
-		/* border: 0.1em solid; */
+		/* border: 0.1em solid; 
 		border-radius: 0.25em;
-		/* z-index: 1000; */
+		/* z-index: 1000; 
 	}
 
 	.cart table {
@@ -125,7 +126,7 @@ body {
 	}
 
 	.cart h3 {
-		/* text-decoration: underline; */display: inline;
+		/* text-decoration: underline; display: inline;
 	}
 
 	.cartTotal {
@@ -133,7 +134,7 @@ body {
 	}
 
 	.cartTotal img {
-		/* padding: 1em; */
+		/* padding: 1em; 
 		width: 2em;
 	}
 	
@@ -156,7 +157,7 @@ body {
   
   .specials div {
 	flex: 1;
-	/* border: 1px solid lightgrey; */
+	/* border: 1px solid lightgrey; 
 	margin: 0em;
 	padding: 1em;
 	
@@ -193,7 +194,7 @@ body {
 	flex: 1;
 	margin: 0.5em;
 	padding: 0.5em;
-	/* background-color: ; */
+	/* background-color: ; 
 	border-radius: 1em;
 }
 
@@ -247,7 +248,7 @@ th, td {
 	.cart {
 		width: 25%;
 		/* width: 40%; */
-		/* margin: auto; */
+		/* margin: auto; 
 		margin: 1em;
 	}
 
@@ -260,6 +261,146 @@ th, td {
 	}
 	
   }
-  
+*/
+
+body {
+    background-color: #000000;
+    font-family: cursive;
+    width: fit-content;
+    
+}
+
+.heading {
+    text-align: center;
+    color: rgb(218, 203, 203);
+    font-size: large;
+}
+
+.ShoppingCart {
+    background-color: #71539A;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(113, 83, 154, 0.2) , 6px 6px 6px rgba(113, 83, 154,0.3);
+    font-size: large;
+    font-weight: 200;
+}
+
+.button {
+    border-radius: 50%;
+    height: 2.5em;
+    width: 2.5em;
+    font-family: cursive;
+
+}
+
+.check {
+    width: 15em;
+    height: 3em;
+    font-weight: 400;
+    font-family: cursive;
+}
+
+.buyBtn {
+    font-weight: 400;
+    width: 15em;
+    height: 3em;
+    font-family: cursive;
+
+}
+
+
+
+@media (min-width: 760px) {
+    .pizzas{
+        display: flex;
+    }  
+    
+    .social{
+        display: flex;
+    }
+}
+
+@media (min-width: 0px) {
+    .social{
+        display: flex;
+    }
+}
+
+
+.box {
+    
+    padding: 1em;
+    font-weight: 400;
+    margin: 1em;
+    border-radius: 0.3em;
+    margin-bottom: 1em;
+    
+}
+
+.small-pizza {
+    background-color: #3F8BC8;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(34, 130, 209, 0.2) , 6px 6px 6px rgba(34, 130, 209,0.3);
+
+
+
+}
+.meduim-pizza {
+    background-color: #C02684;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(192, 38, 132, 0.2) , 6px 6px 6px rgba(192, 38, 132,0.3);
+
+
+    
+}
+
+.large-pizza {
+    background-color: #F6A425;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(246, 164, 37, 0.19) , 6px 6px 6px rgba(246, 164, 37,0.23);
+
+
+    
+}
+
+.footer {
+    background-color: #E27D4F;
+    margin: auto;
+    text-align: center;
+    font-weight: 200;
+    
+}
+
+.social {
+    text-align: center;
+}
+
+.social li {
+    list-style: none;
+    margin: 0em;
+    padding: 0em;
+    flex: 1;
+    
+}
+
+.social a {
+    padding: 0.1em;
+    display: block;
+    width: 6em;
+
+
+}
+
+.social a:hover {
+    background-color: #ee6120;
+    transform: scale(1.2);
+}
+
+.hidden {
+    display: none;
+}
+ 
   
   
