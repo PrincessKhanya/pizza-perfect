@@ -4,7 +4,8 @@
   "description": "This journey have a few chapters. Check back regularly for updates.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
