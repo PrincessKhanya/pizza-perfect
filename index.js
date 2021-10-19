@@ -22,6 +22,10 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use(bodyParser.json())
 
+app.get("/", function(req, res){
+    res.redirect("/pizzas")
+})
+
 app.get("/pizzas", function(req, res){
     res.render("index", {
         totals: pizzaCart.totals()
