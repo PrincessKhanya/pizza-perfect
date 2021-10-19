@@ -24,7 +24,7 @@ module.exports = function PizzaCart() {
 				countSmall--;
 			}
 			pizzaCalcValue();
-		}else if (pizzaId="mediumSub"){
+		}else if (pizzaId==="mediumSub"){
 			if(countMedium<=0){
 				countMedium=0;
 			}else{
@@ -56,7 +56,21 @@ module.exports = function PizzaCart() {
 		var totalCost1=totalCost.toFixed(2);
 	};
 
-	function remove(pizzaId) {
+	// function remove(pizzaId) {
+
+	// }
+
+	function totals(){
+		var totalCosts = totalCost;
+		var totalCostSmalls=totalCostSmall;
+		var totalCostMediums=totalCostMedium;
+		var totalCostLarges=totalCostLarge;
+		return {
+			totalCosts,
+			totalCostSmalls,
+			totalCostMediums,
+			totalCostLarges
+		}
 
 	}
 
@@ -66,8 +80,9 @@ module.exports = function PizzaCart() {
 
 	return {
 		add,
-		remove,
-		list
+		//remove,
+		list,
+		totals
 	}
 
 }

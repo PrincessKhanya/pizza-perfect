@@ -135,20 +135,20 @@
         <h2>Shopping Cart</h2>
         <form action="/pizza/add/" method="post">
           <div class="small">
-            <p> Small <button id="button1" class="button1 button" type="submit" name="size" value="small">+</button> <button id="button2" class="button2 button" type="submit" name="size" value="smallSub">-</button>R<span class="display1 totalSmall">0.00</span></p>
+            <p> Small <button id="button1" class="button1 button" type="submit" name="size" value="small">+</button> <button id="button2" class="button2 button" type="submit" name="size" value="smallSub">-</button>R<span class="display1 totalSmall" placeholder="0.00">{{totals.totalCostSmalls}}</span></p>
         </div>
         <div class="medium">
-            <p> Medium <button id="button3" class="button3 button" type="submit" name="size" value="medium">+</button> <button id="button4" class="button4 button" type="submit" name="size" value="mediumSub">-</button>R<span class="display2 totalMedium">0.00</span></p>
+            <p> Medium <button id="button3" class="button3 button" type="submit" name="size" value="medium">+</button> <button id="button4" class="button4 button" type="submit" name="size" value="mediumSub">-</button>R<span class="display2 totalMedium" placeholder="0.00">{{totals.totalCostMediums}}</span></p>
 
         </div>
         <div class="large">
-            <p> Large <button id="button5" class="button5 button" type="submit" name="size" value="large">+</button> <button id="button6" class="button6 button" type="submit" name="size" value="largeSub">-</button>R<span class="display3 totalLarge">0.00</span></p>
+            <p> Large <button id="button5" class="button5 button" type="submit" name="size" value="large">+</button> <button id="button6" class="button6 button" type="submit" name="size" value="largeSub">-</button>R<span class="display3 totalLarge" placeholder="0.00">{{totals.totalCostLarges}}</span></p>
         </div>
         <div class="total">
-            <p>Total cost  R<span class="totalDisplay">0.00</span></p>
+            <p>Total cost  R<span class="totalDisplay" placeholder="0.00">{{totals.totalCosts}}</span></p>
         </div>
         </form>
-        
+
         <div class="boxes">
             <div>
                 <button class="check">

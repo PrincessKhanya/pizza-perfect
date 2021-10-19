@@ -4,7 +4,7 @@
   "description": "This journey have a few chapters. Check back regularly for updates.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
