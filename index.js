@@ -34,10 +34,10 @@ app.get("/", function(req, res){
 })
 
 app.post("/login", function(req, res){
-    //req.session
-    console.log(req.body.user)
-    console.log(req.body.password)
-    console.log(req.session)
+    req.session.user=req.body.user
+    // console.log(req.body.user)
+    // console.log(req.body.password)
+    // console.log(req.session)
     res.redirect("/pizzas")
 
 })
