@@ -2,6 +2,7 @@ const express=require("express");
 const exphbs = require("express-handlebars");
 const bodyParser=require("body-parser"); 
 const PizzaCart = require("./pizza-cart");
+const session = require('express-session');
 
 
 const app = express();
@@ -22,8 +23,23 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use(bodyParser.json())
 
+app.use(session({ secret: 'keyboard cat', cookie: { maxAge: 60000 }}))
+
 app.get("/", function(req, res){
+    //create landing
+    //box for user to enter name 
+    //make it form has submit button
+    res.render("landingpage")
+    
+})
+
+app.post("/login", function(req, res){
+    //req.session
+    console.log(req.body.user)
+    console.log(req.body.password)
+    console.log(req.session)
     res.redirect("/pizzas")
+
 })
 
 app.get("/pizzas", function(req, res){
@@ -58,8 +74,13 @@ app.post("/pizza/edit", function(req,res){
     res.send(idPizza)
 	res.redirect("/pizzas")
 	
-})
+}) 
 
+
+
+// app.get("/pizza", function(req, res){
+//     res.render("pizzas")
+// })
 
 
 const PORT = process.env.PORT || 7008;

@@ -264,7 +264,7 @@ th, td {
 */
 
 body {
-    background-color: #000000;
+    background-color: #ffffff;
     font-family: cursive;
     width: fit-content;
     
@@ -400,6 +400,10 @@ body {
 
 .hidden {
     display: none;
+}
+
+.login {
+	margin: auto;
 }
  
   
