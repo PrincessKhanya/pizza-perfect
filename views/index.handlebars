@@ -1,51 +1,49 @@
+{{!-- <div>
+  <div class="header">
+    <h1>Pizza Place</h1>
+  </div>
 
-  {{!-- <div>
-    <div class="header" >
-      <h1>Pizza Place</h1>
-    </div>
-
-    <div class="cartTotal " >
-      <strong>Total price</strong>  
-      <span class="cartTotalPrice">0.00</span>
-      <a href="#">
-        <img src="shopping-cart.png" alt="">
-      </a>
-    </div>
-
-
-    <div class="cart" >
-      <h3>Shopping Cart</h3>
+  <div class="cartTotal ">
+    <strong>Total price</strong>
+    <span class="cartTotalPrice">0.00</span>
+    <a href="#">
       <img src="shopping-cart.png" alt="">
+    </a>
+  </div>
 
-      <form action="" method="post"></form>
 
-        <table>
-          <tr>
-            <td><strong>Small pizzas total:</strong></td>
-            <td><span class="smallTotalPrice">0.00</span></td>
-          </tr>
+  <div class="cart">
+    <h3>Shopping Cart</h3>
+    <img src="shopping-cart.png" alt="">
 
-          <tr>
-            <td><strong>Medium pizzas total:</strong></td>
-            <td><span class="mediumTotalPrice">0.00</span></td>
-          </tr>
-          <tr>
-            <td><strong>Large pizza total:</strong></td>
-            <td><span class="largeTotalPrice">0.00</span></td>
-          </tr>
-          <tr>
-            <td><strong>Total price</strong></td>
-            <td><span class="totalPrice">0.00</span></td>
-          </tr>
-        </table>
-    </div>
+    <form action="" method="post"></form>
 
-    <form action="/pizza/add/" method="post">
-      <div class="pizzas">
+    <table>
+      <tr>
+        <td><strong>Small pizzas total:</strong></td>
+        <td><span class="smallTotalPrice">0.00</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>Medium pizzas total:</strong></td>
+        <td><span class="mediumTotalPrice">0.00</span></td>
+      </tr>
+      <tr>
+        <td><strong>Large pizza total:</strong></td>
+        <td><span class="largeTotalPrice">0.00</span></td>
+      </tr>
+      <tr>
+        <td><strong>Total price</strong></td>
+        <td><span class="totalPrice">0.00</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <form action="/pizza/add/" method="post">
+    <div class="pizzas">
       <div class="pizza medium">
         <div class="info">
-          <img src="pizza.png"
-            alt="">
+          <img src="pizza.png" alt="">
           <h2>Medium Pizza</h2>
           <strong>R65.00</strong>
 
@@ -57,18 +55,14 @@
         </div>
 
         <div class="orderBox">
-          <button class="btn orderMediumPizza" style="margin-left: auto"
-          value="mediumPizza"
-          type="submit"
-          name="pizza"
-          >Order medium pizza</button>
+          <button class="btn orderMediumPizza" style="margin-left: auto" value="mediumPizza" type="submit"
+            name="pizza">Order medium pizza</button>
         </div>
 
       </div>
       <div class="pizza large">
         <div class="info">
-          <img src="pizza.png"
-            alt="">
+          <img src="pizza.png" alt="">
           <h2>Large Pizza</h2>
           <strong>85.00</strong>
           <div>
@@ -77,17 +71,14 @@
             3 or less other toppings.
           </div>
         </div>
-        <div class="orderBox" >
-          <button class="btn orderLargePizza" style="margin-left: auto"
-          value="largePizza"
-          type="submit"
-          name="pizza">Order large pizza</button>
+        <div class="orderBox">
+          <button class="btn orderLargePizza" style="margin-left: auto" value="largePizza" type="submit"
+            name="pizza">Order large pizza</button>
         </div>
       </div>
       <div class="pizza small">
         <div class="info">
-          <img src="pizza.png"
-            alt="">
+          <img src="pizza.png" alt="">
           <h2>Small Pizza</h2>
           <strong>35.00</strong>
           <i>
@@ -99,20 +90,21 @@
           </i>
         </div>
         <div class="orderBox">
-          <button class="btn orderSmallPizza" style="margin-left: auto" value="smallPizza" type="submit" name="pizza">Order small pizza</button> 
+          <button class="btn orderSmallPizza" style="margin-left: auto" value="smallPizza" type="submit"
+            name="pizza">Order small pizza</button>
         </div>
       </div>
-     </div>
-    </form>
-
-    
-    <div class="footer">
-      <div class="contact">
-        
-      </div>
-      
     </div>
+  </form>
+
+
+  <div class="footer">
+    <div class="contact">
+
+    </div>
+
   </div>
+</div>
 
 <script src="order-pizza.js"></script>
 <script src="pizza.js"></script>
@@ -122,118 +114,171 @@
 
 <div>
 
-  <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+      href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
 
 </div> --}}
 
-<div class="heading">
-        <h1>Perfect Pizza</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{!-- <div class="heading">
+  <h1>Perfect Pizza</h1>
+</div>
+
+<div class="ShoppingCart box">
+  <h2>Shopping Cart</h2>
+  <form action="/pizza/add/" method="post">
+    <div class="small">
+      <p> Small <button id="button1" class="button1 button" type="submit" name="size" value="small">+</button> <button
+          id="button2" class="button2 button" type="submit" name="size" value="smallSub">-</button>R<span
+          class="display1 totalSmall" placeholder="0.00">{{totals.totalCostSmalls}}</span></p>
     </div>
-
-    <div class="ShoppingCart box">
-        <h2>Shopping Cart</h2>
-        <form action="/pizza/add/" method="post">
-          <div class="small">
-            <p> Small <button id="button1" class="button1 button" type="submit" name="size" value="small">+</button> <button id="button2" class="button2 button" type="submit" name="size" value="smallSub">-</button>R<span class="display1 totalSmall" placeholder="0.00">{{totals.totalCostSmalls}}</span></p>
-        </div>
-        <div class="medium">
-            <p> Medium <button id="button3" class="button3 button" type="submit" name="size" value="medium">+</button> <button id="button4" class="button4 button" type="submit" name="size" value="mediumSub">-</button>R<span class="display2 totalMedium" placeholder="0.00">{{totals.totalCostMediums}}</span></p>
-
-        </div>
-        <div class="large">
-            <p> Large <button id="button5" class="button5 button" type="submit" name="size" value="large">+</button> <button id="button6" class="button6 button" type="submit" name="size" value="largeSub">-</button>R<span class="display3 totalLarge" placeholder="0.00">{{totals.totalCostLarges}}</span></p>
-        </div>
-        <div class="total">
-            <p>Total cost  R<span class="totalDisplay" placeholder="0.00">{{totals.totalCosts}}</span></p>
-        </div>
-        </form>
-
-        <div class="boxes">
-            <div>
-                <button class="check">
-                    Check out
-                </button>
-            </div>
-            <div class="boxs hidden">
-                <p id="reply" class="reply"> </p>
-                <div>
-                    <label for="theMessage">Payment amount:</label>
-				    <input type="text" name="name" id="inputAmount" class="inputAmount buyBtn" placeholder="Enter your amount">  
-                </div>
-
-                <br>
-                
-                <button class="payBtn buyBtn">
-                    Pay
-                </button>
-            </div> 
-        </div>
+    <div class="medium">
+      <p> Medium <button id="button3" class="button3 button" type="submit" name="size" value="medium">+</button> <button
+          id="button4" class="button4 button" type="submit" name="size" value="mediumSub">-</button>R<span
+          class="display2 totalMedium" placeholder="0.00">{{totals.totalCostMediums}}</span></p>
 
     </div>
-        
-    <form action="/pizza/add/" method="post">
-      <div class="pizzas">
+    <div class="large">
+      <p> Large <button id="button5" class="button5 button" type="submit" name="size" value="large">+</button> <button
+          id="button6" class="button6 button" type="submit" name="size" value="largeSub">-</button>R<span
+          class="display3 totalLarge" placeholder="0.00">{{totals.totalCostLarges}}</span></p>
+    </div>
+    <div class="total">
+      <p>Total cost R<span class="totalDisplay" placeholder="0.00">{{totals.totalCosts}}</span></p>
+    </div>
+  </form>
 
-        <div class="box small-pizza">
-            <h2>Small Pizza</h2>
-            <img src="Pizza1-.png" alt="A magarita pizza" width="215">
-            <h3>R20.00</h3>
-            <p>
-                A magarita pizza. With a diameter of 20cm
-            </p>
-            <br>
-            <div class="buy">
-                <button type="submit" name="size" id="button7" class="button7 buyBtn" value="small">Buy</button>
-            </div>
-        
-        </div>
-        <div class= "box meduim-pizza" >
-            <h2>Medium Pizza</h2>
-            <img src="Pizza2-.png" alt="A magarita pizza with mushroom, perparoni,greenpaper,olive" width="215">
-            <h3>R90.00</h3>
-            <p>
-                A magarita pizza with toppings of olives, greenpapper,tomato and mushrooms
-            </p>
-            <div class="buy">
-                <button type="submit" name="size" value="medium" id="button8" class="button8 buyBtn">Buy</button>
-            </div>
-        </div>
-        <div class="box large-pizza">
-            <h2>Large Pizza</h2> 
-            <img src="Pizza3-.png" alt="A pizza with toppings of your choice comes with plate" width="215" >
-            <h3>R140</h3>
-            <p>
-                Pizza slices with a variety of toppings. Mix and match to your owe liking
-            </p>
-            <div class="buy">
-                <button id="button9" class="button9 buyBtn" type="submit" name="size" value="large">Buy</button>
-            </div>
-        </div>
+  <div class="boxes">
+    <div>
+      <button class="check">
+        Check out
+      </button>
+    </div>
+    <div class="boxs hidden">
+      <p id="reply" class="reply"> </p>
+      <div>
+        <label for="theMessage">Payment amount:</label>
+        <input type="text" name="name" id="inputAmount" class="inputAmount buyBtn" placeholder="Enter your amount">
+      </div>
+
+      <br>
+
+      <button class="payBtn buyBtn">
+        Pay
+      </button>
+    </div>
+  </div>
+
+</div>
+
+<form action="/pizza/add/" method="post">
+  <div class="pizzas">
+
+    <div class="box small-pizza">
+      <h2>Small Pizza</h2>
+      <img src="Pizza1-.png" alt="A magarita pizza" width="215">
+      <h3>R20.00</h3>
+      <p>
+        A magarita pizza. With a diameter of 20cm
+      </p>
+      <br>
+      <div class="buy">
+        <button type="submit" name="size" id="button7" class="button7 buyBtn" value="small">Buy</button>
+      </div>
 
     </div>
-    </form>
-    
-    <div class="box footer">
-        <h3>Contact details</h3>
-
-        <ul class="social">
-            <li>
-                <a href="https://www.facebook.com" target="_blank"><img src="5b8b9c0d8b8dbc20c53eed722860f42e.png" alt="Facebook logo" width="50"></a>
-            </li>
-            <li>
-                <a href="https://www.twitter.com" target="_blank"><img src="225132.png" alt="Twittwe logo" width="50"></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com" target="_blank"><img src="insta-logo.png" alt="Instagram logo" width="50"></a>
-            </li>
-            <li>
-                <a href="011 899 7999" target="_blank"><img src="phone-1912209-1617678.png" alt="Phone logo" width="50"></a>
-            </li> <li>
-                <a href="https://www.google.com " target="_blank"><img src="uploads_gmail_logo_gmail_logo_PNG12-364x364.png" alt="Email logo" width="50"></a>
-            </li>
-        </ul>
+    <div class="box meduim-pizza">
+      <h2>Medium Pizza</h2>
+      <img src="Pizza2-.png" alt="A magarita pizza with mushroom, perparoni,greenpaper,olive" width="215">
+      <h3>R90.00</h3>
+      <p>
+        A magarita pizza with toppings of olives, greenpapper,tomato and mushrooms
+      </p>
+      <div class="buy">
+        <button type="submit" name="size" value="medium" id="button8" class="button8 buyBtn">Buy</button>
+      </div>
+    </div>
+    <div class="box large-pizza">
+      <h2>Large Pizza</h2>
+      <img src="Pizza3-.png" alt="A pizza with toppings of your choice comes with plate" width="215">
+      <h3>R140</h3>
+      <p>
+        Pizza slices with a variety of toppings. Mix and match to your owe liking
+      </p>
+      <div class="buy">
+        <button id="button9" class="button9 buyBtn" type="submit" name="size" value="large">Buy</button>
+      </div>
     </div>
 
-    <script src="perfectPizza.js"></script>
+  </div>
+</form>
 
+<div class="box footer">
+  <h3>Contact details</h3>
+
+  <ul class="social">
+    <li>
+      <a href="https://www.facebook.com" target="_blank"><img src="5b8b9c0d8b8dbc20c53eed722860f42e.png"
+          alt="Facebook logo" width="50"></a>
+    </li>
+    <li>
+      <a href="https://www.twitter.com" target="_blank"><img src="225132.png" alt="Twittwe logo" width="50"></a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com" target="_blank"><img src="insta-logo.png" alt="Instagram logo" width="50"></a>
+    </li>
+    <li>
+      <a href="011 899 7999" target="_blank"><img src="phone-1912209-1617678.png" alt="Phone logo" width="50"></a>
+    </li>
+    <li>
+      <a href="https://www.google.com " target="_blank"><img src="uploads_gmail_logo_gmail_logo_PNG12-364x364.png"
+          alt="Email logo" width="50"></a>
+    </li>
+  </ul>
+</div>
+<div> --}}
+  <form action="/count" method="post" name="counterForm">
+    <div class="pizzas">
+      <div class="box small-pizza">
+        <h1>Small</h1>
+        <img src="Pizza1-.png" alt="A magarita pizza" width="215">
+      <h3>R20.00</h3>
+        <button> BUY</button>
+      </div>
+
+      <div class="box meduim-pizza">
+        <h1>Medium</h1>
+        <img src="Pizza2-.png" alt="A magarita pizza with mushroom, perparoni,greenpaper,olive" width="215">
+      <h3>R90.00</h3>
+        <button> BUY</button>
+      </div>
+
+      <div class="box large-pizza">
+        <h1>Large</h1>
+        <img src="Pizza3-.png" alt="A pizza with toppings of your choice comes with plate" width="215">
+      <h3>R140</h3>
+        <button> BUY</button>
+      </div>
+    </div>
+
+
+
+  </form>
+</div>

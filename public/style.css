@@ -404,7 +404,24 @@ body {
 
 .login {
 	margin: auto;
+
 }
+
+.field {
+	margin: 1em;
+}
+
+.field label{
+	display: inline-block;
+	width: 5em;
+}
+
+.pizzass {
+	display: flex;
+
+}
+
+
  
   
   

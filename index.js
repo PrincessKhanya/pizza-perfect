@@ -25,22 +25,48 @@ app.use(bodyParser.json())
 
 app.use(session({ secret: 'keyboard cat', cookie: { maxAge: 60000 }}))
 
+// open({
+//     filename:'./pizza-perfect.db',
+//     driver: sqlite3.Database
+// }).then(async (bd)=>{
+
+// });
+
+app.get('/pizza', function(req,res){
+    res.render("pizzas");
+});
+
+app.get('/pizza-add', function(req,res){
+    res.render("pizza-add");
+    // console.log(req.body)
+});
+
+app.post('/pizza-add', function(req,res){
+    console.log(req.body)
+    res.redirect("/pizza");
+
+});
+
+
+
+
+
+
+
+
 app.get("/", function(req, res){
-    //create landing
-    //box for user to enter name 
-    //make it form has submit button
-    res.render("landingpage")
+    //res.render("landingpage")
     
 })
 
-app.post("/login", function(req, res){
-    req.session.user=req.body.user
-    // console.log(req.body.user)
-    // console.log(req.body.password)
-    // console.log(req.session)
-    res.redirect("/pizzas")
+// app.post("/login", function(req, res){
+//     req.session.user=req.body.user
+//     // console.log(req.body.user)
+//     // console.log(req.body.password)
+//     // console.log(req.session)
+//     res.redirect("/pizzas")
 
-})
+// })
 
 app.get("/pizzas", function(req, res){
     res.render("index", {
